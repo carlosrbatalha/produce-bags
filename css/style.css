@@ -49,6 +49,7 @@ body {
 margin-top: 5px;
 z-index: 0;
 
+
 	
 }
 
@@ -60,6 +61,16 @@ z-index: 0;
 
 
 
+}
+
+.collapsible > input {
+
+  display: none;
+}
+
+.collapsible > label {
+
+  display: none;
 }
 
 .nav-link a {
@@ -125,6 +136,12 @@ align-items: center;
 
 }
 
+
+
+
+/* --------------*/
+
+
 #intro {
 
 
@@ -135,6 +152,7 @@ align-items: center;
   align-items: center;
   justify-content: center;
   padding-top: 150px;
+
 
 
 }
@@ -177,12 +195,56 @@ align-items: center;
 .set-images {
     display: grid;
     grid-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-template-rows: 1fr;
     margin: 30px;
 
 
 }
+
+
+
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation : landscape) { 
+
+.set-images {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 1fr;
+    margin: 30px;
+
+
+}
+
+
+
+}
+
+
+
+@media only screen and (min-device-width: 400px) {
+
+
+.set-images {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-template-rows: 1fr;
+    margin: 30px;
+
+
+}
+
+
+
+
+}
+
+
+
 
 .set-images > div > img {
 
@@ -250,6 +312,71 @@ color: #7d7979;
 
 
 
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  #nav-bar {
+margin-top: -5px;
+z-index: 0;
+
+  
+}
+
+.circle:before {
+  content: ' \25CF';
+  font-size: 150px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: #f9f9f9;
+  position: absolute;
+  top:-6px;
+  bottom: 0;
+  left:0;
+  right:0;
+  margin:auto;
+  padding-bottom: 30px;
+  
+  overflow: visible;
+  z-index: -1;
+
+  
+}
+
+
+
+
+
+.first-text {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  
+
+
+}
+
+
+}
+
+@media only screen and (max-device-width: 490px) {
+
+
+.collapsible > input {
+
+  display: flex;
+}
+
+.collapsible > label {
+
+  display: flex;
+}
+
+  }
+
+}
 
 /* The End */
 
