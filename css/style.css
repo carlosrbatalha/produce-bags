@@ -38,6 +38,7 @@ body {
 	background-color: #96babc;
 	position: fixed;
 	width:100%;
+  z-index: 20;
 
 
 	
@@ -146,19 +147,22 @@ align-items: center;
 }
 
 
+#intro, #make-one, #buy-one, #why-rgb, #contact {
 
-
-/* --------------*/
-
-
-#intro, #why-rgb, #make-one, #buy-one, #contact {
-
-  width:95%;
+  max-width:85%;
   height: auto;
   margin:auto;
 
 
 }
+
+
+
+
+/* --------------*/
+
+
+
 
 .first-text {
   display:flex;
@@ -249,20 +253,47 @@ border-radius: 5px;
 
 #why-rgb{
  
+z-index: -10;
+
+  
+
+}
+
+
+
+#image4 {
 
   position: relative;
-  z-index: -20;
-
+  max-width:100%;
+  margin:auto;
+  padding-top: 50px;
 }
 
 #my-img {
 
-
+display: flex;
 max-width: 100%;
-height: auto;
+height: auto ;
+margin:auto;
+
 
 
 }
+
+.text-over-image {
+top:20%;
+text-align: left;
+height: auto;
+padding: 50px;
+
+
+position: absolute;
+
+
+}
+
+
+
 
 #make-one {
 
@@ -278,11 +309,10 @@ height: auto;
 
 
 .pages-titles {
-display:flex;
+  display:flex;
   align-items: center;
   justify-content: center;
   padding-top: 50px;
-
   color: #a0b9bb;
   font-family: 'Playfair Display', serif;
   font-size: calc(35px + (45 - 35) * ((100vw - 300px) / (1600 - 300))); 
@@ -292,16 +322,44 @@ display:flex;
 }
 
 .pages-text-one {
-color: #7d7979;
-  padding: 30px;
-  
+  color: #7d7979;
   font-family: 'Roboto', sans-serif;
   font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
 
-#contact-form {
-max-width: 95%;
+
+
+
+
+#video {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom:56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+
+  
+}
+
+#video iframe, #video object, #video embed {
+
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+#form {
+max-width: 100%;
 height: auto;
 margin: auto;
 
@@ -311,7 +369,6 @@ margin: auto;
 .form-body {
 
   display: flex;
-  
   justify-content: center;
   flex-direction: column;
 }
@@ -323,14 +380,27 @@ margin: auto;
 
 
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media screen and (max-width: 850px) {
 
-  #nav-bar {
-margin-top: -5px;
-z-index: 0;
+#intro, #make-one, #buy-one, #why-rgb, #contact {
 
-  
+  max-width:100%;
+  height: auto;
+  margin:auto;
+
+
 }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 490px) {
+
+
 
 .circle:before {
   content: ' \25CF';
@@ -358,21 +428,6 @@ z-index: 0;
 
 
 
-.first-text {
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 100px;
-  
-
-
-}
-
-
-}
-
-@media only screen and (max-device-width: 490px) {
-
 
 
   
@@ -397,6 +452,8 @@ z-index: 0;
 #nav-bar {
 margin-top: 30px;
 width:100%;
+
+z-index: 0;
 
 
   
@@ -585,6 +642,8 @@ padding-right: 20px;
 
 
 
+
+
   .set-images {
 
  display: none;
@@ -621,6 +680,16 @@ padding-right: 20px;
 
   }
 
+  .first-text {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  
+
+
+}
+
 
 
 
@@ -631,6 +700,9 @@ padding: 15px 20px 0px 20px;
 
 
 }
+
+
+
 
 
 .pages-text-one {
@@ -645,28 +717,12 @@ padding: 15px 20px 0px 20px;
   font-size: calc(14px + (24 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
-#image4 {
-  
 
- 
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 30px;
-
-
-}
 
 #my-img {
 
-  -webkit-transform:rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-  max-width: 90%;
-  margin-top: 50px;
-  margin-right: -80px;
+  
+  
 
 }
 
