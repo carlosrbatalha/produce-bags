@@ -153,17 +153,26 @@ align-items: center;
 #intro, #make-one, #buy-one, #why-rgb, #contact {
 
   max-width:1000px;
-  height: auto;
+  
   margin: auto;
   
+height: auto;
+
+}
+
+#intro {
+
+height: calc(100vh - 50px);
 
 
 }
 
-#make-one {
+#why-rgb {
 
-
+  padding-top: 75px;
 }
+
+
 
 
 
@@ -179,7 +188,7 @@ align-items: center;
   display:flex;
   align-items: center;
   justify-content: center;
-  padding-top: 150px;
+  padding-top: 165px;
 
 
 
@@ -297,7 +306,6 @@ display: flex;
 align-items: flex-end;
 justify-content: center;
 flex-direction: column;
-
   
 height: 600px;
 position: relative;
@@ -309,8 +317,10 @@ position: relative;
   transform: rotate(-90deg);
   max-width: 500px;
 position: absolute;
-right:0px;
-bottom:0px;
+right: -20px;
+bottom: 0px;
+top:50px;
+
 }
 
 
@@ -330,6 +340,7 @@ bottom:0px;
 }
 
 .content-text {
+  padding-left: 35px;
 
   position: absolute;
   display: flex;
@@ -613,7 +624,7 @@ transition-duration: 0.8s;
 
 
 #form {
-max-width: 700px;
+max-width: 850px;
 height: auto;
 margin: auto;
 
@@ -653,7 +664,6 @@ margin: auto;
 background-color: rgba(160,185,187, 0.3);
 border: none;
 line-height: calc(2em + (2.7 - 2) * ((100vw - 300px)/(1600 - 300)));
-
 padding: 10px;
 font-family: 'Roboto', sans-serif;
 
@@ -1058,13 +1068,6 @@ padding-right: 20px;
 
 
 
-.pages-titles {
-
-
-padding: 15px 20px 0px 20px;
-
-
-}
 
 
 
