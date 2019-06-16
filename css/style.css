@@ -156,9 +156,10 @@ align-items: center;
   
   margin: auto;
   
-height: auto;
+
 
 }
+
 
 #intro {
 
@@ -172,7 +173,24 @@ height: calc(100vh - 50px);
   padding-top: 75px;
 }
 
+#buy-one {
 
+height: 100vh;
+
+}
+
+#make-one {
+
+  height: 100vh;
+}
+
+#contact {
+
+
+
+height: calc(100vh-50px);
+
+}
 
 
 
@@ -265,6 +283,8 @@ object-fit: cover;
 border-radius: 5px;
 
 }
+
+
 
 
 
@@ -452,8 +472,14 @@ transform: scale(0.98);
 
 
 
-#make-one {
+.make-one-div {
 
+display: flex;
+  flex-flow: column ;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 70px;
 
 
 }
@@ -461,10 +487,13 @@ transform: scale(0.98);
 .buy-one-div {
 
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
+  flex-flow: column ;
   align-items: center;
+  justify-content: center;
   text-align: center;
+ 
+ height: 100vh;
+ 
   
 }
 
@@ -598,15 +627,17 @@ transition-duration: 0.8s;
 
 
 #video {
+
   margin-top: 20px;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
   padding-bottom:56.25%;
   padding-top: 30px;
   height: 0;
   overflow: hidden;
+ 
+
+
 
   
 }
@@ -614,19 +645,38 @@ transition-duration: 0.8s;
 #video iframe, #video object, #video embed {
 
   position:absolute;
-  top:0;
-  left:0;
-  width: 100%;
-  height: 100%;
+  
+  top: 0px;
+  right: 120px;
+
+  width: 75%;
+  height: 75%;
+  
 }
+
+
+
+
+.contact-div {
+
+display: flex;
+flex-flow: column;
+
+align-items: center;
+ 
+ height: calc(100vh-50px);
+ margin: auto;
+
+
+
+}
+
 
 
 
 
 #form {
 max-width: 850px;
-height: auto;
-margin: auto;
 
 
 
@@ -647,6 +697,9 @@ margin: auto;
 }
 
 
+
+
+
 #name-label, #email-label, #message-area {
   font-family: 'Roboto', sans-serif;
   font-size: calc(12px + (22 - 12) * ((100vw - 300px) / (1600 - 300)));
@@ -659,16 +712,24 @@ margin: auto;
 
 
 
-  #name, #email, #message, #send {
+  #name, #email, #message, #submit {
 
 background-color: rgba(160,185,187, 0.3);
 border: none;
 line-height: calc(2em + (2.7 - 2) * ((100vw - 300px)/(1600 - 300)));
-padding: 10px;
+padding: 5px 5px 5px 10px;
 font-family: 'Roboto', sans-serif;
 
 
   }
+
+  input, textarea {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+
+  }
+
 
 
 
@@ -686,7 +747,7 @@ font-family: 'Roboto', sans-serif;
 
   
 
-  #send {
+  #submit {
     display: flex;
     align-items: center; 
     justify-content:center;
@@ -704,7 +765,7 @@ font-family: 'Roboto', sans-serif;
 
   }
 
-  #send:hover {
+  #submit:hover {
 
    transform: scale(1.1);
 
@@ -722,7 +783,7 @@ display:flex;
 -webkit-box-align: center;
     -ms-flex-align: center;
         align-items: center;
-margin-top: 20px;
+margin-top: 70px;
 margin-bottom: 20px;
 
   }
